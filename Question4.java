@@ -21,7 +21,7 @@ public class Question4
     int prompt = in.nextInt();
 
     while (prompt != 0){
-      for (int i = 0, i <= prompt, i ++){
+      for (int i = 0; i <= prompt; i ++){
         System.out.print("*");
       }
       prompt = prompt - 1;
