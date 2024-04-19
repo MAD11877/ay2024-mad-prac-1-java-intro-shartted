@@ -18,10 +18,13 @@ public class Question4
      */
      
     Scanner in = new Scanner(System.in);
-    int prompt = in.nextInt()
+    int prompt = in.nextInt();
 
     while (prompt != 0){
-      System.out.print()
+      for (int i = 0, i <= prompt, i ++){
+        System.out.print("*");
+      }
+      prompt = prompt - 1;
     }
   }
 }
