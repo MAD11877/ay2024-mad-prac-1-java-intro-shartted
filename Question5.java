@@ -27,13 +27,6 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    int enter_amt = in.nextInt();
-
-    int[] num_array;
-
-    for (int i = 0; i < enter_amt; i++){
-      num_array[i] = in.nextInt();
-    }
    
   }
 }
