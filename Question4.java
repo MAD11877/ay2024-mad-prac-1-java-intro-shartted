@@ -20,11 +20,10 @@ public class Question4
     Scanner in = new Scanner(System.in);
     int prompt = in.nextInt();
 
-    while (prompt != 0){
-      for (int i = 0; i <= prompt; i ++){
+    for (int i = 0; i < prompt; i++){
+      for (int s = 0; s < i; s++){
         System.out.print("*");
       }
-      prompt = prompt - 1;
     }
   }
 }
