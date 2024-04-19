@@ -34,8 +34,6 @@ public class Question5
     for (int i = 0; i < enter_amt; i++){
       num_array[i] = in.nextInt();
     }
-    
-    for 
-
+   
   }
 }
