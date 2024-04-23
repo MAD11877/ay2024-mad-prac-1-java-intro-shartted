@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Question5
 {
@@ -27,6 +28,33 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    
-  }
+        int num_input = in.nextInt(); //prompt for the number of integers to be entered
+        ArrayList<Integer> values = new ArrayList<>();
+
+        
+        for (int i = 0; i < num_input; i++) { // Corrected loop condition
+            int input = in.nextInt();
+            values.add(input);
+        }
+
+        int[] occurrences = new int[101]; // Assuming numbers are between 0 and 100
+        
+        for (int num : values) {
+            occurrences[num]++;
+        }
+        
+        // Find the mode
+        int mode = 0;
+        int maxCount = 0;
+        for (int i = 0; i < occurrences.length; i++) {
+            if (occurrences[i] > maxCount) {
+                mode = i;
+                maxCount = occurrences[i];
+            }
+        }
+
+        // Print the mode
+        System.out.println(mode);
+    }
 }
+
