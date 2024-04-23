@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Question5
 {
@@ -29,7 +30,7 @@ public class Question5
     Scanner in = new Scanner(System.in);
     int num_input = in.nextInt(); //prompt for the number of int to be entered
    
-    ArrayList<Integer> values = new ArrayList<>();
+    ArrayListist<Integer> values = new ArrayList<>();
 
     for (int i = 0; i <= num_input; i++){
       int input = in.nextInt();
