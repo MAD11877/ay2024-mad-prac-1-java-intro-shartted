@@ -21,10 +21,10 @@ public class Question4
     int prompt = in.nextInt();
 
     for (int i = 0; i <= prompt; i++){
-      for (int s = prompt; i < prompt-1; s--){
-        System.out.print("*");
+      for (int count = 0; count < prompt; count++){
+        System.out.print(*);
       }
-      System.out.print("*\n");
+      System.out.println(*);
     }
   }
 }
