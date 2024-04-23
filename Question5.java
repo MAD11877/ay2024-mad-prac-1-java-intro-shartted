@@ -28,15 +28,17 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    int num_input = in.nextInt(); //prompt for the number of int to be entered
-    ArrayList<Integer> values = new ArrayList<>();
+        System.out.print("Enter the number of integers: ");
+        int num_input = in.nextInt(); //prompt for the number of integers to be entered
+        ArrayList<Integer> values = new ArrayList<>();
 
-    for (int i = 0; i <= num_input; i++){
-      int input = in.nextInt();
-      values.add(input);
-    }
+        System.out.println("Enter the integers:");
+        for (int i = 0; i < num_input; i++) { // Corrected loop condition
+            int input = in.nextInt();
+            values.add(input);
+        }
 
-    int[] occurrences = new int[101]; // Assuming numbers are between 0 and 100
+        int[] occurrences = new int[101]; // Assuming numbers are between 0 and 100
         
         for (int num : values) {
             occurrences[num]++;
@@ -51,5 +53,9 @@ public class Question5
                 maxCount = occurrences[i];
             }
         }
-  }
+
+        // Print the mode
+        System.out.println("Mode: " + mode);
+    }
 }
+
