@@ -29,8 +29,7 @@ public class Question5
      
     Scanner in = new Scanner(System.in);
     int num_input = in.nextInt(); //prompt for the number of int to be entered
-   
-    ArrayListist<Integer> values = new ArrayList<>();
+    ArrayList<Integer> values = new ArrayList<>();
 
     for (int i = 0; i <= num_input; i++){
       int input = in.nextInt();
