@@ -28,11 +28,10 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-        System.out.print("Enter the number of integers: ");
         int num_input = in.nextInt(); //prompt for the number of integers to be entered
         ArrayList<Integer> values = new ArrayList<>();
 
-        System.out.println("Enter the integers:");
+        
         for (int i = 0; i < num_input; i++) { // Corrected loop condition
             int input = in.nextInt();
             values.add(input);
